@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xbox Controllers</title>
+    <title>Table Tennis Bats</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://www.customcontrollers.com/cdn/shop/products/Xbox-Series-X-Custom-Controller-Blue-Storm-Edition-2.png?v=1657531819&width=1000');
+            font-family: Arial, sans-serif;
+            background: url('https://img.olympics.com/images/image/private/t_social_share_thumb/f_auto/primary/momhllweruehw0ud2m2r') no-repeat center center fixed;
             background-size: cover;
-            background-attachment: fixed;
-            color: white;
-            text-align: center;
+            animation: scrollBackground 10s linear infinite;
         }
+
+        @keyframes scrollBackground {
+            from { background-position: 0 0; }
+            to { background-position: 0 -100%; }
+        }
+
         .content {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            margin: 50px;
-            border-radius: 10px;
+            height: 200vh; /* Makes the page scrollable */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-        a {
-            color: #00ff00;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>Xbox Controllers</h1>
-        <p>Discover the latest Xbox controllers, designed for ultimate gaming performance and comfort.</p>
-        <p>For more information, visit the <a href="https//microsoft.com/en-us/store/xbox" target="_blank">official Xbox website</a>.</p>
+        <div>
+            <h1>Table Tennis Bats</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Tabletennis.jpg" alt="Table Tennis Bat">
+            <p>Discover the best table tennis bats for all skill levels.</p>
+        </div>
     </div>
 </body>
 </html>
-
